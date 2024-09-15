@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'dev.flutter.flutter-gradle-plugin'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace "com.example.smartbin"
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.example.smartbin"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 1 // Replace with your actual version code or use flutterVersionCode
+        versionName "1.0" // Replace with your actual version name or use flutterVersionName
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+            // shrinkResources true
+            minifyEnabled true // Replace with your release signingConfig
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
+    // implementation 'com.google.firebase:firebase-analytics'
+    // Remove if already included in another dependency
+    // implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20"
+}

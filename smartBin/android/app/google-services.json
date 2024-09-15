@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560328466279",
+    "project_id": "smart-bin-480c8",
+    "storage_bucket": "smart-bin-480c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560328466279:android:f4bd0e052b314fad3a19c2",
+        "android_client_info": {
+          "package_name": "com.example.smartbin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn1NbjktJpxaKsM71Mfmg78QeMK1M67qQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
